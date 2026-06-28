@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benice - The independent digital portfolio and networking platform for artists and curators. Elevate your practice.">
+    <title>Benice | Independent Digital Space for Art</title>
+    
+    <!-- Google Fonts: Sora (bold rebellious headings) & Plus Jakarta Sans (clean geometric text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="splash-active">
+
+    <!-- Welcoming Splash Screen -->
+    <div id="welcoming-splash" style="--mouse-x: 50%; --mouse-y: 50%;">
+        <!-- Background Video Loop -->
+        <div class="video-bg-container">
+            <video autoplay loop muted playsinline class="bg-video">
+                <source src="assets/cosmos_splash.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <div class="gradient-blur">
+            <div></div>
+            <div></div>
+        </div>
+        
+        <div class="splash-content">
+            <div class="art-space-heading-box" style="margin-bottom: 3rem;">
+                <h1 class="hero_heading absolute sharp mobileonly" style="text-align: center;">Benice<br>Creative.</h1>
+                <h1 class="hero_heading absolute sharp desktoponly" id="splashHeading" style="--text-x: 50%; --text-y: 50%; text-align: center;">Benice<br>Creative.</h1>
+            </div>
+            <button class="btn btn-secondary btn-large" id="enter-space-btn">Enter Space</button>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">BENICE<span class="dot">.</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#concept" class="nav-link">The Concept</a>
+                <a href="independent-art-space.html" class="nav-link">Art Space</a>
+                <a href="#showcase" class="nav-link">The Card</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#signup" class="btn btn-secondary">Sign In</a>
+                <a href="#signup" class="btn btn-primary">Join Benice</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section" style="--mouse-x: 50%; --mouse-y: 50%;">
+            <div class="container hero-container">
+                <div class="hero-content">
+
+                    <span class="hero-eyebrow">REBELLIOUS ART SPACE</span>
+                    <h1>Centralized digital identity for <span class="highlight-text">artists & curators</span>.</h1>
+                    <p class="hero-desc">
+                        Replace fragmented PDFs, links, and cluttered social profiles with a single, professional digital card. Shared in-person, via QR, or mobile wallet. Built commission-free.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#signup" class="btn btn-primary btn-large">Create Your Card</a>
+                        <a href="#showcase" class="btn btn-secondary btn-large">View Demo</a>
+                    </div>
+                </div>
+
+                <!-- 3D Rotating Interactive Card Mockup (Delight Showcase) -->
+                <div class="hero-card-showcase reveal">
+                    <div class="scene3d">
+                        <div class="card3d" id="interactiveCard">
+                            <div class="card3d-glow"></div>
+                            
+                            <!-- Profile Header -->
+                            <div class="card3d-header">
+                                <div class="profile-avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80')"></div>
+                                <div class="profile-info">
+                                    <h3>Aria Benice</h3>
+                                    <p>Contemporary Sculptor & Designer</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Portfolio Thumbnails -->
+                            <div class="card3d-portfolio">
+                                <div class="art-thumb" style="background-image: url('https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=200&q=80')">
+                                    <span>Cosmic Dusk</span>
+                                </div>
+                                <div class="art-thumb" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=200&q=80')">
+                                    <span>Liquid State</span>
+                                </div>
+                                <div class="art-thumb" style="background-image: url('https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=200&q=80')">
+                                    <span>Digital Dust</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Card Footer -->
+                            <div class="card3d-footer">
+                                <div class="card3d-tag"><i data-lucide="shield-check"></i> Verified Artist</div>
+                                <div class="card3d-qr"><i data-lucide="qr-code"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Concept Section -->
+        <section id="concept" class="concept-section">
+            <div class="container">
+                <div class="concept-header reveal">
+                    <span class="hero-eyebrow">NO PRESSURES</span>
+                    <h2>We believe in <span class="highlight-text">meaningful connections</span> over algorithm ratings.</h2>
+                    <p>
+                        Social networks are built to farm attention. Benice is built to respect your practice. No posting pressure, no opaque algorithms—just a clean, professional space for curators, galleries, and collectors to discover your work.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrolling Product Showcase Section (Apple-style interactive switcher) -->
+        <section id="features" class="showcase-section">
+            <div class="container showcase-container">
+                <!-- Left Column: Scrollable text details -->
+                <div class="showcase-details">
+                    <!-- Feature Block 1 -->
+                    <div class="showcase-block" data-feature="portfolio" id="f-portfolio">
+                        <span class="block-num">01</span>
+                        <h3>The Digital Card</h3>
+                        <p>
+                            Generate a clean, beautiful digital business card that holds your statement, CV, social links, and up to 50 high-resolution artworks. Add it directly to your Apple Wallet or Google Wallet for instant in-person sharing.
+                        </p>
+                    </div>
+                    
+                    <!-- Feature Block 2 -->
+                    <div class="showcase-block" data-feature="connectory" id="f-connectory">
+                        <span class="block-num">02</span>
+                        <h3>The Connectory</h3>
+                        <p>
+                            A curated, ad-free directory of artists and curators. Search by medium, focus, or region without algorithmic interference. Create meaningful dialogues and professional opportunities.
+                        </p>
+                    </div>
+
+                    <!-- Feature Block 3 -->
+                    <div class="showcase-block" data-feature="patronage" id="f-patronage">
+                        <span class="block-num">03</span>
+                        <h3>Support My Practice</h3>
+                        <p>
+                            Enable your audience to support your studio expenses or research directly through your card. A direct-to-creator patronage module with zero commission deductions.
+                        </p>
+                    </div>
+
+                    <!-- Feature Block 4 -->
+                    <div class="showcase-block" data-feature="booking" id="f-booking">
+                        <span class="block-num">04</span>
+                        <h3>Studio Visit Bookings</h3>
+                        <p>
+                            Make it easy for curators, buyers, and gallery representatives to schedule studio visits or virtual portfolio reviews. Define your availability and manage requests directly on your card dashboard.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Sticky Mockup Viewer -->
+                <div class="showcase-viewer">
+                    <div class="sticky-viewer-container">
+                        <!-- Mobile Phone Mockup -->
+                        <div class="phone-mockup">
+                            <div class="phone-speaker"></div>
+                            <div class="phone-screen">
+                                <!-- Screen 1: Portfolio/Profile View -->
+                                <div class="screen-tab active" id="tab-portfolio">
+                                    <div class="screen-header-bar">
+                                        <div class="screen-logo">BENICE</div>
+                                    </div>
+                                    <div class="screen-profile-header">
+                                        <div class="screen-avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80')"></div>
+                                        <h4>Aria Benice</h4>
+                                        <p>Contemporary Sculptor</p>
+                                    </div>
+                                    <div class="screen-art-grid">
+                                        <div class="screen-art-card" style="background-image: url('https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=150&q=80')"></div>
+                                        <div class="screen-art-card" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=150&q=80')"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Screen 2: Connectory Discover Feed -->
+                                <div class="screen-tab" id="tab-connectory">
+                                    <div class="screen-header-bar">
+                                        <span>Discover Artists</span>
+                                    </div>
+                                    <div class="screen-discover-feed">
+                                        <div class="discover-row">
+                                            <div class="disc-avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80')"></div>
+                                            <div>
+                                                <h5>Liam Vance</h5>
+                                                <p>Digital Collage • Berlin</p>
+                                            </div>
+                                        </div>
+                                        <div class="discover-row">
+                                            <div class="disc-avatar" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80')"></div>
+                                            <div>
+                                                <h5>Elena Rostova</h5>
+                                                <p>Oil Painting • Venice</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Screen 3: Patronage Support Screen -->
+                                <div class="screen-tab" id="tab-patronage">
+                                    <div class="screen-header-bar">
+                                        <span>Support Practice</span>
+                                    </div>
+                                    <div class="screen-support-content">
+                                        <div class="support-heart"><i data-lucide="heart"></i></div>
+                                        <h5>Support Aria's Studio</h5>
+                                        <p>Contributions go directly towards sculpting materials, clay, and kiln rentals.</p>
+                                        <div class="support-actions">
+                                            <button class="support-btn">$10</button>
+                                            <button class="support-btn">$25</button>
+                                            <button class="support-btn">$50</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Screen 4: Booking UI -->
+                                <div class="screen-tab" id="tab-booking">
+                                    <div class="screen-header-bar">
+                                        <span>Book Studio Visit</span>
+                                    </div>
+                                    <div class="screen-booking-content">
+                                        <h5>Select Date & Time</h5>
+                                        <div class="booking-calendar">
+                                            <div class="cal-day">Mon 12</div>
+                                            <div class="cal-day selected">Tue 13</div>
+                                            <div class="cal-day">Wed 14</div>
+                                        </div>
+                                        <div class="booking-times">
+                                            <div class="time-slot selected">10:00 AM</div>
+                                            <div class="time-slot">02:00 PM</div>
+                                        </div>
+                                        <button class="booking-confirm-btn">Schedule Visit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Signup Section -->
+        <section id="signup" class="cta-section">
+            <div class="container cta-container reveal">
+                <h2>Ready to claim your <span class="highlight-text">digital card</span>?</h2>
+                <p>Join over 40,000+ artists and curators building a cleaner, independent space for art.</p>
+                <form class="cta-form" id="signupForm" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email address" required class="cta-input">
+                    <button type="submit" class="btn btn-primary btn-large">Claim My Profile</button>
+                </form>
+                <div class="cta-success-message" id="ctaSuccessMsg">
+                    <i data-lucide="party-popper"></i> Welcome to the community! We'll send you setup details shortly.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-text">BENICE<span class="dot">.</span></span>
+                </a>
+                <p>
+                    Reimagining the digital infrastructure for artists and curators worldwide. Vetted, clean, and algorithm-free.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Platform</h5>
+                    <a href="#concept">The Concept</a>
+                    <a href="#showcase">Digital Card</a>
+                    <a href="#features">The Connectory</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Resources</h5>
+                    <a href="#">Help Center</a>
+                    <a href="#">Community Guidelines</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Benice. Built for the arts. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS script -->
+    <script src="script.js"></script>
+</body>
+</html>
