@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Independent Art Space by Benice - Center stage for artists, curators, and contemporary art practices. Claim your digital card.">
+    <title>Independent Art Space | Benice</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Center-specific overrides for Independent Art Space page */
+        .art-space-hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh;
+            padding: 8rem 0;
+            position: relative;
+            overflow: hidden;
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(244, 121, 58, 0.08) 0%, transparent 65%);
+        }
+
+        .art-space-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .art-space-heading-box {
+            width: 100%;
+            text-align: center;
+            position: relative;
+            margin-bottom: 2.5rem;
+            padding: 2rem 0;
+            overflow: hidden;
+        }
+
+        .art-space-heading-box .gradient-blur > div:nth-child(1) {
+            left: var(--mouse-x, 50%);
+            top: var(--mouse-y, 50%);
+            will-change: left, top;
+            transition: left 0.1s ease-out, top 0.1s ease-out;
+        }
+
+        .art-space-heading {
+            font-size: 5.5rem;
+            line-height: 1.1;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.04em;
+            text-align: center;
+        }
+
+        .art-space-heading.desktoponly {
+            display: block;
+            background: radial-gradient(
+                circle 180px at var(--text-x, 50%) var(--text-y, 50%),
+                #ffffff 0%,
+                var(--primary-orange) 50%,
+                rgba(255, 255, 255, 0.35) 100%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: white;
+            will-change: background-image;
+        }
+
+        .art-space-heading.mobileonly {
+            display: none;
+            color: white;
+        }
+
+        .art-space-desc {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 3.5rem;
+            max-width: 680px;
+        }
+
+        .art-space-actions {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 5rem;
+        }
+
+        /* 3D Showcase Card center override */
+        .art-space-card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            perspective: 1500px;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 991px) {
+            .art-space-heading {
+                font-size: 3.5rem;
+            }
+            .art-space-heading.desktoponly {
+                display: none !important;
+            }
+            .art-space-heading.mobileonly {
+                display: block !important;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .art-space-heading {
+                font-size: 2.75rem;
+            }
+            .art-space-actions {
+                flex-direction: column;
+                gap: 1.25rem;
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">BENICE<span class="dot">.</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html#concept" class="nav-link">The Concept</a>
+                <a href="index.html#showcase" class="nav-link">The Card</a>
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="index.html#signup" class="btn btn-secondary">Sign In</a>
+                <a href="index.html#signup" class="btn btn-primary">Join Benice</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Center-Aligned Immersive Spotlight Section -->
+        <section id="hero" class="art-space-hero">
+            <!-- Ambient lights centered behind the text -->
+            <div class="gradient-blur">
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="container">
+                <div class="art-space-content">
+                    <span class="hero-eyebrow">EXCLUSIVE DIGITAL CANVAS</span>
+                    
+                    <!-- Spotlight centered heading -->
+                    <div class="art-space-heading-box">
+                        <h1 class="art-space-heading absolute sharp mobileonly">Independent Art Space</h1>
+                        <h1 class="art-space-heading absolute sharp desktoponly" id="spotlightHeading" style="--text-x: 50%; --text-y: 50%;">Independent Art Space</h1>
+                    </div>
+
+                    <p class="art-space-desc">
+                        A decentralized digital portfolio and networking ecosystem built for contemporary curators, artists, and visual creators. Manage your collection, accept direct patronage support, and arrange bookings—all within one premium glassmorphic identity card.
+                    </p>
+
+                    <div class="art-space-actions">
+                        <a href="index.html#signup" class="btn btn-primary btn-large">Create Your Canvas</a>
+                        <a href="index.html#features" class="btn btn-secondary btn-large">Explore Directory</a>
+                    </div>
+
+                    <!-- Centered 3D Card Preview -->
+                    <div class="art-space-card-container reveal">
+                        <div class="card3d" id="interactiveCard">
+                            <div class="card3d-glow"></div>
+                            
+                            <!-- Profile Header -->
+                            <div class="card3d-header">
+                                <div class="profile-avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80')"></div>
+                                <div class="profile-info" style="text-align: left;">
+                                    <h3>Aria Benice</h3>
+                                    <p>Contemporary Sculptor & Designer</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Portfolio Thumbnails -->
+                            <div class="card3d-portfolio">
+                                <div class="art-thumb" style="background-image: url('https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=200&q=80')">
+                                    <span>Cosmic Dusk</span>
+                                </div>
+                                <div class="art-thumb" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=200&q=80')">
+                                    <span>Liquid State</span>
+                                </div>
+                                <div class="art-thumb" style="background-image: url('https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=200&q=80')">
+                                    <span>Digital Dust</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Card Footer -->
+                            <div class="card3d-footer">
+                                <div class="card3d-tag"><i data-lucide="shield-check"></i> Verified Artist</div>
+                                <div class="card3d-qr"><i data-lucide="qr-code"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-bottom-container">
+            <p>&copy; 2026 Benice. Built for the arts. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <span class="separator">•</span>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS script -->
+    <script src="script.js"></script>
+    <script>
+        // Custom spotlight handler for the dedicated centered heading ID on this page
+        const spaceHero = document.getElementById('hero');
+        const customHeading = document.getElementById('spotlightHeading');
+
+        if (spaceHero && customHeading) {
+            spaceHero.addEventListener('mousemove', (e) => {
+                const headingRect = customHeading.getBoundingClientRect();
+                const textX = e.clientX - headingRect.left;
+                const textY = e.clientY - headingRect.top;
+                customHeading.style.setProperty('--text-x', `${textX}px`);
+                customHeading.style.setProperty('--text-y', `${textY}px`);
+            });
+        }
+    </script>
+</body>
+</html>
