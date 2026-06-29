@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contra Labs - The frontier human data and evaluation lab for creative AI. Powered by Contra's network of 1.5M+ verified creative experts.">
+    <title>Contra Labs - Powered by Contra</title>
+    
+    <!-- Google Fonts: Source Serif 4 (for editorial headings) & Albert Sans (for clear text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>
+                <span class="logo-text">Contra <span class="serif-text italic">Labs</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#framework" class="nav-link">Framework</a>
+                <a href="#methodology" class="nav-link">Methodology</a>
+                <a href="#arena" class="nav-link">Arena</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="kicker">FRONT LAYER OF CREATIVE AI</div>
+                    <h1>A frontier human data and evaluation lab making AI better for <span class="serif-text italic">creativity</span>.</h1>
+                    <p class="hero-sub">
+                        Execution is free. Now, <span class="serif-text italic">judgment</span> is everything. We help top AI teams align their generative models with real human taste, powered by a vetted network of 1.5M+ creative experts.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#arena" class="btn btn-primary btn-large">Try the Arena</a>
+                        <a href="#framework" class="btn btn-secondary btn-large">Read Methodology</a>
+                    </div>
+                </div>
+
+                <!-- Interactive Battle Arena Widget (Delight Feature) -->
+                <div id="arena" class="arena-widget-wrapper reveal">
+                    <div class="arena-card">
+                        <div class="arena-header">
+                            <div class="arena-tag"><span class="pulse-dot"></span> Creative Arena Battle</div>
+                            <div class="arena-prompt-label">Prompt: "Salmon burger on brioche bun, glistening mayo, microgreens"</div>
+                        </div>
+                        <div class="arena-battleground">
+                            <!-- Left Option -->
+                            <button class="arena-option-btn" id="voteLeftBtn" aria-label="Vote Left Option">
+                                <div class="option-preview" style="background-image: url('https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=400&q=80')"></div>
+                                <div class="vote-label">Option A</div>
+                            </button>
+                            <!-- Divider -->
+                            <div class="arena-vs">VS</div>
+                            <!-- Right Option -->
+                            <button class="arena-option-btn" id="voteRightBtn" aria-label="Vote Right Option">
+                                <div class="option-preview" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80')"></div>
+                                <div class="vote-label">Option B</div>
+                            </button>
+                        </div>
+                        <div class="arena-footer">
+                            <div class="arena-vote-action">Which output represents better creative taste?</div>
+                            <!-- Success Toast -->
+                            <div class="vote-success-toast" id="voteSuccessToast">
+                                <i data-lucide="check-circle"></i> Vote registered! Thank you for setting the taste benchmark.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section (Separated by clean rules) -->
+        <section class="stats-section">
+            <div class="container stats-container">
+                <div class="stat-item reveal">
+                    <span class="stat-number">1.5M+</span>
+                    <span class="stat-desc">Vetted creative experts shaping the models of tomorrow</span>
+                </div>
+                <div class="stat-item reveal delay-1">
+                    <span class="stat-number">400+</span>
+                    <span class="stat-desc">Distinct creative skills and professional tools evaluated</span>
+                </div>
+                <div class="stat-item reveal delay-2">
+                    <span class="stat-number">$250M+</span>
+                    <span class="stat-desc">Earned by creatives on Contra's freelance network</span>
+                </div>
+                <div class="stat-item reveal delay-3">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-desc">Frontier AI models actively compared in Elo battles</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Framework Section -->
+        <section id="framework" class="framework-section">
+            <div class="container">
+                <div class="section-title-block">
+                    <span class="kicker">EVALUATION MATRIX</span>
+                    <h2>Building <span class="serif-text italic">taste</span> into creative AI.</h2>
+                    <p class="section-desc">
+                        Contra Labs brings together private evaluations, public comparisons, and research outputs under one unified human evaluation framework.
+                    </p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Bento Card 1 -->
+                    <div class="bento-card span-2 reveal">
+                        <div class="bento-card-content">
+                            <span class="card-num">01</span>
+                            <h3>Private Preference Datasets</h3>
+                            <p>
+                                Vetted datasets built by the very professionals who set creative standards. Vetted designers, writers, and artists rate, label, and annotate model outputs. This high-signal RLHF teaches AI what actual quality looks like.
+                            </p>
+                        </div>
+                        <div class="bento-badge">For Enterprise Labs</div>
+                    </div>
+
+                    <!-- Bento Card 2 -->
+                    <div class="bento-card span-1 reveal delay-1">
+                        <div class="bento-card-content">
+                            <span class="card-num">02</span>
+                            <h3>The Creative Arena</h3>
+                            <p>
+                                AI models go head-to-head on real professional briefs. Vetted creatives judge outputs blindly, generating real-time Elo leaderboard scores.
+                            </p>
+                        </div>
+                        <div class="bento-badge">Public benchmark</div>
+                    </div>
+
+                    <!-- Bento Card 3 -->
+                    <div class="bento-card span-1 reveal">
+                        <div class="bento-card-content">
+                            <span class="card-num">03</span>
+                            <h3>Human Creativity Benchmark</h3>
+                            <p>
+                                Establishing a new quality index for creative AI, testing visual appeal, prompt adherence, coherence, and utility in actual design stacks.
+                            </p>
+                        </div>
+                        <div class="bento-badge">Industry standard</div>
+                    </div>
+
+                    <!-- Bento Card 4 -->
+                    <div class="bento-card span-2 reveal delay-1">
+                        <div class="bento-card-content">
+                            <span class="card-num">04</span>
+                            <h3>Multimodal Evaluation Pipeline</h3>
+                            <p>
+                                We evaluate across domains where standard automated metrics fail: ad copy, visual assets, video consistency, UI code output, and animation realism. Our metrics capture subjective parameters like composition, brand alignment, and taste.
+                            </p>
+                        </div>
+                        <div class="bento-badge">Image, Code, Video, Audio</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section id="methodology" class="methodology-section">
+            <div class="container">
+                <div class="section-title-block centered">
+                    <span class="kicker">METHODOLOGY</span>
+                    <h2>Blind, balanced, and audited.</h2>
+                </div>
+
+                <!-- Sticky Scroll Text Story Animation -->
+                <div class="story-scroll-wrapper">
+                    <div class="story-sticky-container">
+                        <div class="story-text-frame">
+                            <div class="story-text-item" id="story-text-1">
+                                <h3>Built on real-world<br><span class="serif-text italic" style="color: var(--accent-teal)">creative expertise</span></h3>
+                            </div>
+                            <div class="story-text-item" id="story-text-2">
+                                <h3>Contra Labs taps a vetted network of practicing creative professionals</h3>
+                            </div>
+                            <div class="story-text-item" id="story-text-3">
+                                <h3>With real market experience</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="methodology-list">
+                    <!-- Method Item 1 -->
+                    <div class="method-row reveal">
+                        <div class="method-meta">
+                            <span class="method-index">I</span>
+                            <h4>Blind Comparative Reviews</h4>
+                        </div>
+                        <p class="method-body">
+                            Raters judge outputs with zero knowledge of model identities, vendors, or prompt metadata. Side-by-side positioning is randomized for every evaluation to eliminate selection bias.
+                        </p>
+                    </div>
+
+                    <!-- Method Item 2 -->
+                    <div class="method-row reveal delay-1">
+                        <div class="method-meta">
+                            <span class="method-index">II</span>
+                            <h4>Expert Preference Modeling</h4>
+                        </div>
+                        <p class="method-body">
+                            We discard generic crowd labor. Every vote originates from verified industry professionals on Contra who do creative design, copywriting, and software production for a living.
+                        </p>
+                    </div>
+
+                    <!-- Method Item 3 -->
+                    <div class="method-row reveal delay-2">
+                        <div class="method-meta">
+                            <span class="method-index">III</span>
+                            <h4>Creative Scoring Systems</h4>
+                        </div>
+                        <p class="method-body">
+                            Subjective taste is converted into structured metadata scoring rubrics covering prompt alignment, technical rendering fidelity, aesthetic intent, and layout coherence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-header-block reveal">
+                    <span class="kicker">PARTNERSHIP</span>
+                    <h2>Help shape the future of <span class="serif-text italic">creative taste</span>.</h2>
+                    <p>
+                        We partner with foundational AI labs, tool builders, and enterprise creative teams to train, evaluate, and benchmark generative models.
+                    </p>
+                </div>
+                
+                <div class="contact-content reveal delay-1">
+                    <div class="contact-links-grid">
+                        <a href="mailto:labs@contra.com" class="contact-btn-card">
+                            <div class="contact-card-icon"><i data-lucide="mail"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-label">Email Partnership</span>
+                                <span class="contact-value">labs@contra.com</span>
+                            </div>
+                            <div class="contact-arrow"><i data-lucide="arrow-up-right"></i></div>
+                        </a>
+                        <a href="https://contra.com" target="_blank" class="contact-btn-card">
+                            <div class="contact-card-icon"><i data-lucide="globe"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-label">Contra Network</span>
+                                <span class="contact-value">contra.com</span>
+                            </div>
+                            <div class="contact-arrow"><i data-lucide="arrow-up-right"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-dot"></span>
+                    <span class="logo-text">Contra <span class="serif-text italic">Labs</span></span>
+                </a>
+                <p>
+                    The frontier human data and evaluation lab for creative AI. Powered by Contra.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Benchmark</h5>
+                    <a href="#arena">Creative Arena</a>
+                    <a href="#framework">HCB Index</a>
+                    <a href="#methodology">Methodology</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <a href="https://contra.com" target="_blank">Contra Main Site</a>
+                    <a href="#about">About Labs</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Contra Labs. All Rights Reserved. Built with taste.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
