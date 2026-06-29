@@ -1,122 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Benice - The independent digital portfolio and networking platform for artists and curators. Elevate your practice.">
-    <title>Benice | Independent Digital Space for Art</title>
+    <meta name="description" content="Benice Creactivation - Creative Design Studio. Kami menghadirkan solusi komunikasi visual radikal, branding, UI/UX, dan konten kreatif dengan estetika minimalis modern.">
+    <title>Benice Creactivation | Creative Design Studio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="beniceigprofiletransparnt3-ezgif.com-gif-maker.ico">
     
-    <!-- Google Fonts: Sora (bold rebellious headings) & Plus Jakarta Sans (clean geometric text) -->
+    <!-- Clash Display Font & Google Fonts: Albert Sans -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
-    <!-- CSS Stylesheet -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="splash-active">
+<body>
 
-    <!-- Welcoming Splash Screen -->
-    <div id="welcoming-splash" style="--mouse-x: 50%; --mouse-y: 50%;">
-        <!-- Background Video Loop -->
-        <div class="video-bg-container">
-            <video autoplay loop muted playsinline class="bg-video">
-                <source src="assets/cosmos_splash.mp4" type="video/mp4">
-            </video>
-            <div class="video-overlay"></div>
-        </div>
-
-        <div class="gradient-blur">
-            <div></div>
-            <div></div>
-        </div>
-        
-        <div class="splash-content">
-            <div class="art-space-heading-box" style="margin-bottom: 3rem;">
-                <h1 class="hero_heading absolute sharp mobileonly" style="text-align: center;">Benice<br>Creative.</h1>
-                <h1 class="hero_heading absolute sharp desktoponly" id="splashHeading" style="--text-x: 50%; --text-y: 50%; text-align: center;">Benice<br>Creative.</h1>
+    <!-- Welcoming Preloader (sui.io style) -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo-wrapper">
+                <img src="Benice Logo For Site.png" alt="Benice Logo" class="preloader-logo">
             </div>
-            <button class="btn btn-secondary btn-large" id="enter-space-btn">Enter Space</button>
+            <div class="preloader-progress-wrapper">
+                <div class="preloader-progress-bar"></div>
+            </div>
+            <div class="preloader-percentage-wrapper">
+                <span class="preloader-percentage">00</span><span class="preloader-percent-symbol">%</span>
+            </div>
         </div>
     </div>
 
-    <!-- Scroll Progress Indicator -->
+    <!-- Scroll Progress Indicator (Brutalist Bar) -->
     <div class="scroll-progress-bar"></div>
 
     <!-- Header Navigation -->
     <header class="main-header">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <span class="logo-text">BENICE<span class="dot">.</span></span>
-            </a>
+        <div class="container navbar_layout">
+            <div class="navbar_brand-block">
+                <a href="#" class="logo">
+                    <img src="Benice Logo For Site.png" alt="Benice Studio Logo" class="logo-img">
+                </a>
+            </div>
             
-            <nav class="nav-links">
-                <a href="#concept" class="nav-link">The Concept</a>
-                <a href="independent-art-space.html" class="nav-link">Art Space</a>
-                <a href="#showcase" class="nav-link">The Card</a>
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#faq" class="nav-link">FAQ</a>
+            <nav role="navigation" class="navbar-menu">
+                <!-- HOME -->
+                <div class="navbar_link">
+                    <a href="#hero" class="navbar-dd_toggle no-icon">
+                        <div class="navbar_link-text">Home</div>
+                    </a>
+                </div>
+                
+                <!-- ABOUT -->
+                <div class="navbar_link">
+                    <div class="navbar-dd_toggle">
+                        <div class="navbar_link-text">About</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none" class="navbar-dd_icon"><path d="M5.49609 10.001H4.49609V5.91895H5.49609V10.001ZM10 4.49512V5.49512H5.91797V4.49512H10ZM4.08203 5.49512H0V4.49512H4.08203V5.49512ZM5.49609 4.08301H4.49609V0.000976562L5.49609 0V4.08301Z" fill="currentColor"></path></svg>
+                    </div>
+                    <div class="navbar-content">
+                        <div class="navbar-dd_inner-wrapper">
+                            <div class="navbar-dd_block">
+                                <span class="navbar-dd_category">Overview/</span>
+                                <a href="#manifesto" class="navbar-dd_link-block">
+                                    <div class="w-layout-vflex">
+                                        <span class="navbar-dd_link">Our Agency</span>
+                                        <span class="navbar-dd_link-desc">Culture & Community specialists.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="navbar-dd_block has-border">
+                                <span class="navbar-dd_category">Manifesto/</span>
+                                <a href="#concept" class="navbar-dd_link-block">
+                                    <div class="w-layout-vflex">
+                                        <span class="navbar-dd_link">Sub-culture Gateway</span>
+                                        <span class="navbar-dd_link-desc">Commercial vision meets authenticity.</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PORTFOLIO -->
+                <div class="navbar_link">
+                    <a href="#showcase" class="navbar-dd_toggle no-icon">
+                        <div class="navbar_link-text">Portfolio</div>
+                    </a>
+                </div>
+                
+                <!-- SERVICES -->
+                <div class="navbar_link">
+                    <div class="navbar-dd_toggle">
+                        <div class="navbar_link-text">Services</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none" class="navbar-dd_icon"><path d="M5.49609 10.001H4.49609V5.91895H5.49609V10.001ZM10 4.49512V5.49512H5.91797V4.49512H10ZM4.08203 5.49512H0V4.49512H4.08203V5.49512ZM5.49609 4.08301H4.49609V0.000976562L5.49609 0V4.08301Z" fill="currentColor"></path></svg>
+                    </div>
+                    <div class="navbar-content">
+                        <div class="navbar-dd_inner-wrapper">
+                            <div class="navbar-dd_block">
+                                <span class="navbar-dd_category">Expertise/</span>
+                                <a href="#services" class="navbar-dd_link-block">
+                                    <div class="w-layout-vflex">
+                                        <span class="navbar-dd_link">Core Services</span>
+                                        <span class="navbar-dd_link-desc">Visual design to brand entry.</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="navbar-dd_block has-border">
+                                <span class="navbar-dd_category">Engagement/</span>
+                                <a href="#services" class="navbar-dd_link-block">
+                                    <div class="w-layout-vflex">
+                                        <span class="navbar-dd_link">Organic Growth</span>
+                                        <span class="navbar-dd_link-desc">Genuine sub-culture integration.</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PARTNERS -->
+                <div class="navbar_link">
+                    <a href="#social-proof" class="navbar-dd_toggle no-icon">
+                        <div class="navbar_link-text">Partners</div>
+                    </a>
+                </div>
+                
+                <!-- CONTACT -->
+                <div class="navbar_link">
+                    <a href="#closing" class="navbar-dd_toggle no-icon">
+                        <div class="navbar_link-text">Contact</div>
+                    </a>
+                </div>
             </nav>
             
             <div class="nav-actions">
-                <a href="#signup" class="btn btn-secondary">Sign In</a>
-                <a href="#signup" class="btn btn-primary">Join Benice</a>
+                <a href="#closing" class="btn btn-primary btn-nav">Let's Connect</a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
             </div>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section" style="--mouse-x: 50%; --mouse-y: 50%;">
-            <div class="container hero-container">
-                <div class="hero-content">
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="drawer-header">
+            <a href="#" class="logo">
+                <img src="Benice Logo For Site.png" alt="Benice Studio Logo" class="logo-img">
+            </a>
+            <button class="close-menu-btn" aria-label="Close Menu" id="closeMenuBtn">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="mobile-links">
+            <a href="#hero" class="mobile-link">HOME</a>
+            <a href="#manifesto" class="mobile-link">ABOUT</a>
+            <a href="#showcase" class="mobile-link">PORTFOLIO</a>
+            <a href="#services" class="mobile-link">SERVICES</a>
+            <a href="#social-proof" class="mobile-link">PARTNERS</a>
+            <a href="#closing" class="mobile-link">CONTACT</a>
+            <a href="#closing" class="btn btn-primary btn-mobile-cta">Let's Connect</a>
+        </div>
+    </div>
 
-                    <span class="hero-eyebrow">REBELLIOUS ART SPACE</span>
-                    <h1>Centralized digital identity for <span class="highlight-text">artists & curators</span>.</h1>
-                    <p class="hero-desc">
-                        Replace fragmented PDFs, links, and cluttered social profiles with a single, professional digital card. Shared in-person, via QR, or mobile wallet. Built commission-free.
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero-section" style="--mouse-x: 50%; --mouse-y: 50%;">
+            <!-- Gradient Blur Background -->
+            <div class="gradient-blur">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <span class="hero-eyebrow">[ WE ARE BENICE ]</span>
+                    <h1 class="hero-title">
+                        Helping brands engage and grow with <span class="gradient-text">next-gen consumers</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        We help your brand define the right target market, decode sub-culture dynamics, and enter communities through authentic, organic engagement that drives long-term impact.
                     </p>
                     <div class="hero-actions">
-                        <a href="#signup" class="btn btn-primary btn-large">Create Your Card</a>
-                        <a href="#showcase" class="btn btn-secondary btn-large">View Demo</a>
+                        <a href="#showcase" class="btn btn-primary btn-large">What We Do</a>
+                        <a href="#closing" class="btn btn-secondary btn-large">Let’s Collaborate</a>
                     </div>
                 </div>
+                
+                <div class="hero-visual reveal delay-1">
+                    <!-- Brutalist Viewport Container / Animation & Showreel Placeholder -->
+                    <div class="viewport-box glass-panel">
 
-                <!-- 3D Rotating Interactive Card Mockup (Delight Showcase) -->
-                <div class="hero-card-showcase reveal">
-                    <div class="scene3d">
-                        <div class="card3d" id="interactiveCard">
-                            <div class="card3d-glow"></div>
+                        <!-- Visual Support (Background Video Showreel & Animation Placeholder) -->
+                        <div class="viewport-canvas">
+                            <video autoplay loop muted playsinline class="viewport-video">
+                                <source src="assets/cosmos.mp4" type="video/mp4">
+                            </video>
+                            <div class="viewport-overlay">
+                                <img src="SnapInsta.to_525766320_18413040337106464_1601733741413632451_n.jpg" alt="Benice Creatives Work 1" class="slideshow-img active">
+                                <img src="FA3A9EA8-1574-4C4B-8480-887C59B4646C (1).png" alt="Benice Creatives Work 2" class="slideshow-img">
+                                <img src="aaCopy of BTG_8354.png" alt="Benice Creatives Work 3" class="slideshow-img">
+                            </div>
                             
-                            <!-- Profile Header -->
-                            <div class="card3d-header">
-                                <div class="profile-avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80')"></div>
-                                <div class="profile-info">
-                                    <h3>Aria Benice</h3>
-                                    <p>Contemporary Sculptor & Designer</p>
+                            <!-- Dotted pattern and crosshairs to emphasize digital/brutalist mockup -->
+                            <div class="dot-grid"></div>
+                            <div class="crosshair top-left">+</div>
+                            <div class="crosshair top-right">+</div>
+                            <div class="crosshair bottom-left">+</div>
+                            <div class="crosshair bottom-right">+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TENTANG KAMI / ABOUT US -->
+        <section id="manifesto" class="about-section">
+            <div class="container about-container">
+                <!-- Left Side: Core Message -->
+                <div class="about-content reveal">
+                    <span class="about-eyebrow">[ WHO WE ARE ]</span>
+                    <h2 class="about-title">A bridge between commercial vision and sub-culture authenticity.</h2>
+                    <p class="about-desc">
+                        Modern consumers don’t buy into ads; they buy into culture. At Benice, we help your business navigate, decode, and authentically engage with next-gen audiences. We ensure your brand doesn’t feel like a stranger in the community, but a meaningful part of its growth.
+                    </p>
+                    <div class="about-actions">
+                        <a href="#services" class="btn btn-primary btn-large">Our Methods</a>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Floating Profile Card Mockup -->
+                <div class="about-visual reveal delay-1">
+                    <div class="about-card-wrapper">
+                        <!-- Profile Card Mockup -->
+                        <div class="profile-card-glass glass-panel">
+                            <!-- Card Header -->
+                            <div class="card-header-main">
+                                <div class="profile-avatar-brand">B</div>
+                                <div class="profile-title-info">
+                                    <h3>Benice Creatives</h3>
+                                    <p>Culture & Community Agency</p>
                                 </div>
                             </div>
                             
-                            <!-- Portfolio Thumbnails -->
-                            <div class="card3d-portfolio">
-                                <div class="art-thumb" style="background-image: url('https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=200&q=80')">
-                                    <span>Cosmic Dusk</span>
+                            <!-- Grid Items inside the Card -->
+                            <div class="card-grid-container">
+                                <!-- Grid Item 1: Large Top -->
+                                <div class="grid-item item-large">
+                                    <div class="grid-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=400&q=80');">
+                                        <div class="item-overlay-content">
+                                            <h4>01 / Cultural Insight</h4>
+                                            <p>Research-backed audience trends and sub-culture analytics.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="art-thumb" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=200&q=80')">
-                                    <span>Liquid State</span>
-                                </div>
-                                <div class="art-thumb" style="background-image: url('https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=200&q=80')">
-                                    <span>Digital Dust</span>
+                                
+                                <!-- Bottom Row -->
+                                <div class="grid-row-bottom">
+                                    <!-- Grid Item 2: Bottom Left -->
+                                    <div class="grid-item item-small">
+                                        <div class="grid-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=300&q=80');">
+                                            <div class="item-overlay-content">
+                                                <h4>02 / Network</h4>
+                                                <p>Local community ecosystems.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Grid Item 3: Bottom Right -->
+                                    <div class="grid-item item-small">
+                                        <div class="grid-img-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=300&q=80');">
+                                            <div class="item-overlay-content">
+                                                <h4>03 / Experiences</h4>
+                                                <p>Creative design to activations.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
                             <!-- Card Footer -->
-                            <div class="card3d-footer">
-                                <div class="card3d-tag"><i data-lucide="shield-check"></i> Verified Artist</div>
-                                <div class="card3d-qr"><i data-lucide="qr-code"></i></div>
+                            <div class="card-footer-pill">
+                                <span>Always Benice 🐝</span>
                             </div>
                         </div>
                     </div>
@@ -124,7 +295,7 @@
             </div>
         </section>
 
-        <!-- Concept Section -->
+        <!-- CONCEPT SECTION WITH CLIENT SHOWCASE MARQUEE -->
         <section id="concept" class="concept-section">
             <div class="container">
                 <div class="concept-header reveal">
@@ -135,132 +306,48 @@
                     </p>
                 </div>
             </div>
-        </section>
 
-        <!-- Scrolling Product Showcase Section (Apple-style interactive switcher) -->
-        <section id="features" class="showcase-section">
-            <div class="container showcase-container">
-                <!-- Left Column: Scrollable text details -->
-                <div class="showcase-details">
-                    <!-- Feature Block 1 -->
-                    <div class="showcase-block" data-feature="portfolio" id="f-portfolio">
-                        <span class="block-num">01</span>
-                        <h3>The Digital Card</h3>
-                        <p>
-                            Generate a clean, beautiful digital business card that holds your statement, CV, social links, and up to 50 high-resolution artworks. Add it directly to your Apple Wallet or Google Wallet for instant in-person sharing.
-                        </p>
-                    </div>
-                    
-                    <!-- Feature Block 2 -->
-                    <div class="showcase-block" data-feature="connectory" id="f-connectory">
-                        <span class="block-num">02</span>
-                        <h3>The Connectory</h3>
-                        <p>
-                            A curated, ad-free directory of artists and curators. Search by medium, focus, or region without algorithmic interference. Create meaningful dialogues and professional opportunities.
-                        </p>
-                    </div>
-
-                    <!-- Feature Block 3 -->
-                    <div class="showcase-block" data-feature="patronage" id="f-patronage">
-                        <span class="block-num">03</span>
-                        <h3>Support My Practice</h3>
-                        <p>
-                            Enable your audience to support your studio expenses or research directly through your card. A direct-to-creator patronage module with zero commission deductions.
-                        </p>
-                    </div>
-
-                    <!-- Feature Block 4 -->
-                    <div class="showcase-block" data-feature="booking" id="f-booking">
-                        <span class="block-num">04</span>
-                        <h3>Studio Visit Bookings</h3>
-                        <p>
-                            Make it easy for curators, buyers, and gallery representatives to schedule studio visits or virtual portfolio reviews. Define your availability and manage requests directly on your card dashboard.
-                        </p>
-                    </div>
+            <!-- Client Showcase Marquee -->
+            <div class="home-carousel reveal delay-1">
+                <div class="container">
+                    <p class="showcase-title">Our Beloved Client</p>
                 </div>
-
-                <!-- Right Column: Sticky Mockup Viewer -->
-                <div class="showcase-viewer">
-                    <div class="sticky-viewer-container">
-                        <!-- Mobile Phone Mockup -->
-                        <div class="phone-mockup">
-                            <div class="phone-speaker"></div>
-                            <div class="phone-screen">
-                                <!-- Screen 1: Portfolio/Profile View -->
-                                <div class="screen-tab active" id="tab-portfolio">
-                                    <div class="screen-header-bar">
-                                        <div class="screen-logo">BENICE</div>
-                                    </div>
-                                    <div class="screen-profile-header">
-                                        <div class="screen-avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80')"></div>
-                                        <h4>Aria Benice</h4>
-                                        <p>Contemporary Sculptor</p>
-                                    </div>
-                                    <div class="screen-art-grid">
-                                        <div class="screen-art-card" style="background-image: url('https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=150&q=80')"></div>
-                                        <div class="screen-art-card" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=150&q=80')"></div>
-                                    </div>
-                                </div>
-
-                                <!-- Screen 2: Connectory Discover Feed -->
-                                <div class="screen-tab" id="tab-connectory">
-                                    <div class="screen-header-bar">
-                                        <span>Discover Artists</span>
-                                    </div>
-                                    <div class="screen-discover-feed">
-                                        <div class="discover-row">
-                                            <div class="disc-avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80')"></div>
-                                            <div>
-                                                <h5>Liam Vance</h5>
-                                                <p>Digital Collage • Berlin</p>
-                                            </div>
-                                        </div>
-                                        <div class="discover-row">
-                                            <div class="disc-avatar" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80')"></div>
-                                            <div>
-                                                <h5>Elena Rostova</h5>
-                                                <p>Oil Painting • Venice</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Screen 3: Patronage Support Screen -->
-                                <div class="screen-tab" id="tab-patronage">
-                                    <div class="screen-header-bar">
-                                        <span>Support Practice</span>
-                                    </div>
-                                    <div class="screen-support-content">
-                                        <div class="support-heart"><i data-lucide="heart"></i></div>
-                                        <h5>Support Aria's Studio</h5>
-                                        <p>Contributions go directly towards sculpting materials, clay, and kiln rentals.</p>
-                                        <div class="support-actions">
-                                            <button class="support-btn">$10</button>
-                                            <button class="support-btn">$25</button>
-                                            <button class="support-btn">$50</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Screen 4: Booking UI -->
-                                <div class="screen-tab" id="tab-booking">
-                                    <div class="screen-header-bar">
-                                        <span>Book Studio Visit</span>
-                                    </div>
-                                    <div class="screen-booking-content">
-                                        <h5>Select Date & Time</h5>
-                                        <div class="booking-calendar">
-                                            <div class="cal-day">Mon 12</div>
-                                            <div class="cal-day selected">Tue 13</div>
-                                            <div class="cal-day">Wed 14</div>
-                                        </div>
-                                        <div class="booking-times">
-                                            <div class="time-slot selected">10:00 AM</div>
-                                            <div class="time-slot">02:00 PM</div>
-                                        </div>
-                                        <button class="booking-confirm-btn">Schedule Visit</button>
-                                    </div>
-                                </div>
+                <div data-carousel="" data-carousel-speed="75" data-carousel-duplicate="2" class="carousel">
+                    <div data-carousel-track="" class="carousel__track">
+                        <!-- Carousel Item 1 -->
+                        <div data-carousel-item="" class="carousel__item">
+                            <div class="home-hero_marquee-item marquee-item_mob">
+                                <img loading="lazy" src="placeholder logo client showcase.png" alt="Client Logo" class="full-width invert">
+                            </div>
+                            <div class="home-hero_marquee-item marquee-item_mob">
+                                <img loading="lazy" src="placeholder logo client showcase.png" alt="Client Logo" class="full-width invert">
+                            </div>
+                            <div class="home-hero_marquee-item marquee-item_mob">
+                                <img loading="lazy" src="placeholder logo client showcase.png" alt="Client Logo" class="full-width invert">
+                            </div>
+                            <div class="home-hero_marquee-item marquee-item_mob">
+                                <img loading="lazy" src="placeholder logo client showcase.png" alt="Client Logo" class="full-width invert">
+                            </div>
+                            <div class="home-hero_marquee-item marquee-item_mob">
+                                <img loading="lazy" src="placeholder logo client showcase.png" alt="Client Logo" class="full-width invert">
+                            </div>
+                        </div>
+                        <!-- Carousel Item 2 (Duplicate for continuous loop) -->
+                        <div data-carousel-item="" class="carousel__item" aria-hidden="true">
+                            <div class="home-hero_marquee-item marquee-item_mob">
+                                <img loading="lazy" src="placeholder logo client showcase.png" alt="Client Logo" class="full-width invert">
+                            </div>
+                            <div class="home-hero_marquee-item marquee-item_mob">
+                                <img loading="lazy" src="placeholder logo client showcase.png" alt="Client Logo" class="full-width invert">
+                            </div>
+                            <div class="home-hero_marquee-item marquee-item_mob">
+                                <img loading="lazy" src="placeholder logo client showcase.png" alt="Client Logo" class="full-width invert">
+                            </div>
+                            <div class="home-hero_marquee-item marquee-item_mob">
+                                <img loading="lazy" src="placeholder logo client showcase.png" alt="Client Logo" class="full-width invert">
+                            </div>
+                            <div class="home-hero_marquee-item marquee-item_mob">
+                                <img loading="lazy" src="placeholder logo client showcase.png" alt="Client Logo" class="full-width invert">
                             </div>
                         </div>
                     </div>
@@ -268,63 +355,434 @@
             </div>
         </section>
 
-        <!-- CTA Signup Section -->
-        <section id="signup" class="cta-section">
-            <div class="container cta-container reveal">
-                <h2>Ready to claim your <span class="highlight-text">digital card</span>?</h2>
-                <p>Join over 40,000+ artists and curators building a cleaner, independent space for art.</p>
-                <form class="cta-form" id="signupForm" onsubmit="event.preventDefault();">
-                    <input type="email" placeholder="Enter your email address" required class="cta-input">
-                    <button type="submit" class="btn btn-primary btn-large">Claim My Profile</button>
-                </form>
-                <div class="cta-success-message" id="ctaSuccessMsg">
-                    <i data-lucide="party-popper"></i> Welcome to the community! We'll send you setup details shortly.
+        <section id="showcase" class="showcase-section">
+            <div class="showcase-bg-glow"></div>
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="hero-eyebrow">[ SELECTED WORK ]</span>
+                    <h2 class="section-title">Selected Work</h2>
+                    <p class="section-subtitle">Browse our project carousel to explore our selected work.</p>
+                </div>
+                
+                <!-- PORTFOLIO CAROUSEL CONTAINER -->
+                <div class="portfolio-carousel-wrapper reveal">
+                    <!-- Carousel Slides -->
+                    <div class="portfolio-carousel">
+                        
+                        <!-- Slide 1 -->
+                        <div class="portfolio-slide active" data-slide="0">
+                            <div class="slide-details">
+                                <span class="portfolio-category">[ COMMUNITY PENETRATION ]</span>
+                                <h3 class="slide-title">SUB-CULTURE ACTIVATION FOR RELX</h3>
+                                <p class="slide-desc">
+                                    Mapping out a strategic cultural entry for RELX to connect authentically with the local independent music and streetwear scene. We defined the ideal target nodes, created organic engagement points, and built long-term brand relevance without disrupting the community's ecosystem.
+                                </p>
+                                <div class="slide-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Client:</span>
+                                        <span class="meta-value">RELX International</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Collaborator:</span>
+                                        <span class="meta-value">Benice Network & Local Collectives</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-slide-cta">
+                                    VIEW CASE STUDY <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="slide-visual">
+                                <div class="viewport-box glass-panel">
+                                    <div class="viewport-canvas slide-slideshow">
+                                        <img src="Artboard-Benice-X-Relx-New_01.png" alt="RELX Slide 1" class="slide-image active">
+                                        <img src="Artboard-Benice-X-Relx-New_02.png" alt="RELX Slide 2" class="slide-image">
+                                        <img src="Artboard-Benice-X-Relx-New_03.png" alt="RELX Slide 3" class="slide-image">
+                                        <img src="Artboard-Benice-X-Relx-New_04.png" alt="RELX Slide 4" class="slide-image">
+                                        <img src="Artboard-Benice-X-Relx-Post-2_01.png" alt="RELX Slide 5" class="slide-image">
+                                        <div class="image-dotted-overlay"></div>
+                                        <div class="crosshair top-left">+</div>
+                                        <div class="crosshair top-right">+</div>
+                                        <div class="crosshair bottom-left">+</div>
+                                        <div class="crosshair bottom-right">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="portfolio-slide" data-slide="1">
+                            <div class="slide-details">
+                                <span class="portfolio-category">[ BRANDING & IDENTITY ]</span>
+                                <h3 class="slide-title">KOSMOS BRAND ARCHITECTURE</h3>
+                                <p class="slide-desc">
+                                    Complete visual strategy, 3D assets, and identity guidelines developed for Kosmos Labs. Bridging commercial vision with sub-culture authenticity.
+                                </p>
+                                <div class="slide-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Client:</span>
+                                        <span class="meta-value">ApexGlobal Org.</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Focus:</span>
+                                        <span class="meta-value">Visual Strategy</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-slide-cta">
+                                    View Project <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="slide-visual">
+                                <div class="viewport-box glass-panel">
+                                    <div class="viewport-canvas">
+                                        <img src="assets/human_figure.png" alt="Cosmic Identity Concept" class="slide-image">
+                                        <div class="image-dotted-overlay"></div>
+                                        <div class="crosshair top-left">+</div>
+                                        <div class="crosshair top-right">+</div>
+                                        <div class="crosshair bottom-left">+</div>
+                                        <div class="crosshair bottom-right">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="portfolio-slide" data-slide="2">
+                            <div class="slide-details">
+                                <span class="portfolio-category">[ CREATIVE CAMPAIGN ]</span>
+                                <h3 class="slide-title">RADICAL CHANGE CAMPAIGN</h3>
+                                <p class="slide-desc">
+                                    High-impact sub-culture campaign driving engagement and cultural positioning for Synapse Creative. Demanding attention, rewarding curiosity.
+                                </p>
+                                <div class="slide-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Client:</span>
+                                        <span class="meta-value">Synapse Creative</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Type:</span>
+                                        <span class="meta-value">Digital Campaign</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-slide-cta">
+                                    View Project <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="slide-visual">
+                                <div class="viewport-box glass-panel">
+                                    <div class="viewport-canvas">
+                                        <div class="portfolio-image-placeholder">
+                                            <i data-lucide="image" class="placeholder-icon"></i>
+                                            <span class="placeholder-text">HD IMAGE PLACEHOLDER [3]</span>
+                                        </div>
+                                        <div class="image-dotted-overlay"></div>
+                                        <div class="crosshair top-left">+</div>
+                                        <div class="crosshair top-right">+</div>
+                                        <div class="crosshair bottom-left">+</div>
+                                        <div class="crosshair bottom-right">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="portfolio-slide" data-slide="3">
+                            <div class="slide-details">
+                                <span class="portfolio-category">[ BRANDING & IDENTITY ]</span>
+                                <h3 class="slide-title">METAVISION LOGO LOCKUP</h3>
+                                <p class="slide-desc">
+                                    Minimalist, futuristic brand identity development for MetaCorp ID, tailored for high-fidelity cross-screen consistency and community integration.
+                                </p>
+                                <div class="slide-meta">
+                                    <div class="meta-item">
+                                        <span class="meta-label">Client:</span>
+                                        <span class="meta-value">MetaCorp ID</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <span class="meta-label">Platform:</span>
+                                        <span class="meta-value">Multi-screen Logo</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-slide-cta">
+                                    View Project <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="slide-visual">
+                                <div class="viewport-box glass-panel">
+                                    <div class="viewport-canvas">
+                                        <div class="portfolio-image-placeholder alt-placeholder">
+                                            <i data-lucide="palette" class="placeholder-icon"></i>
+                                            <span class="placeholder-text">HD IMAGE PLACEHOLDER [4]</span>
+                                        </div>
+                                        <div class="image-dotted-overlay"></div>
+                                        <div class="crosshair top-left">+</div>
+                                        <div class="crosshair top-right">+</div>
+                                        <div class="crosshair bottom-left">+</div>
+                                        <div class="crosshair bottom-right">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <div class="carousel-controls">
+                        <button type="button" class="carousel-control-btn prev-btn" aria-label="Previous project">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        <div class="carousel-indicators">
+                            <span class="current-indicator">01</span>
+                            <span class="indicator-separator">/</span>
+                            <span class="total-indicator">04</span>
+                        </div>
+                        <button type="button" class="carousel-control-btn next-btn" aria-label="Next project">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. LAYANAN YANG DITAWARKAN (SERVICES) -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="services-header-split reveal">
+                    <div class="left-side">
+                        <span class="services-eyebrow">[ CORE SERVICES ]</span>
+                        <h2 class="section-title">KAPABILITAS KERJA</h2>
+                    </div>
+                    <div class="right-side">
+                        <p class="services-intro">
+                            Kami menggabungkan strategi bisnis yang solid dengan seni desain visual mentah untuk menghasilkan dampak maksimal.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Services Table Format (Brutalist lines and Hover Actions) -->
+                <div class="services-table-wrapper reveal">
+                    <div class="services-table">
+                        <!-- Service Row 1 -->
+                        <div class="service-row">
+                            <div class="service-number">/ 01</div>
+                            <div class="service-title-col">
+                                <h3 class="service-name">Visual Communication Design</h3>
+                                <p class="service-desc">Translasi pesan kompleks ke dalam grafis statis dan dinamis yang tajam dan mudah diingat.</p>
+                            </div>
+                            <div class="service-deliverables">
+                                <span class="deliverable-tag">[ Poster & Editorial ]</span>
+                                <span class="deliverable-tag">[ Graphic System ]</span>
+                                <span class="deliverable-tag">[ Key Visual ]</span>
+                            </div>
+                            <div class="service-arrow">
+                                <i data-lucide="arrow-right"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Row 2 -->
+                        <div class="service-row">
+                            <div class="service-number">/ 02</div>
+                            <div class="service-title-col">
+                                <h3 class="service-name">Brand Rebranding Strategy</h3>
+                                <p class="service-desc">Analisis pasar dan pemosisian ulang brand untuk merebut kembali relevansi di era modern.</p>
+                            </div>
+                            <div class="service-deliverables">
+                                <span class="deliverable-tag">[ Identity System ]</span>
+                                <span class="deliverable-tag">[ Guidelines Book ]</span>
+                                <span class="deliverable-tag">[ Brand Tone ]</span>
+                            </div>
+                            <div class="service-arrow">
+                                <i data-lucide="arrow-right"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Row 3 -->
+                        <div class="service-row">
+                            <div class="service-number">/ 03</div>
+                            <div class="service-title-col">
+                                <h3 class="service-name">Social Media Content & Editorial Plan</h3>
+                                <p class="service-desc">Perencanaan naratif mingguan dan visual aset terkurasi untuk mendominasi lini masa audiens.</p>
+                            </div>
+                            <div class="service-deliverables">
+                                <span class="deliverable-tag">[ Grid Planning ]</span>
+                                <span class="deliverable-tag">[ Copywriting Style ]</span>
+                                <span class="deliverable-tag">[ Templates ]</span>
+                            </div>
+                            <div class="service-arrow">
+                                <i data-lucide="arrow-right"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Row 4 -->
+                        <div class="service-row">
+                            <div class="service-number">/ 04</div>
+                            <div class="service-title-col">
+                                <h3 class="service-name">Layouting & Merchandising</h3>
+                                <p class="service-desc">Pengaturan tata letak publikasi fisik serta perancangan produk cinderamata berkarakter tinggi.</p>
+                            </div>
+                            <div class="service-deliverables">
+                                <span class="deliverable-tag">[ Book Layout ]</span>
+                                <span class="deliverable-tag">[ Apparel Design ]</span>
+                                <span class="deliverable-tag">[ Packagings ]</span>
+                            </div>
+                            <div class="service-arrow">
+                                <i data-lucide="arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. TESTIMONI / MITRA (SOCIAL PROOF) -->
+        <section id="social-proof" class="social-proof-section">
+            <div class="container">
+                <div class="social-proof-grid">
+                    <!-- Left: Client Quote Box (Glassmorphic brutalist card) -->
+                    <div class="testimonial-container reveal">
+                        <span class="proof-eyebrow">[ BUKTI SOSIAL ]</span>
+                        <h2 class="proof-title">APA KATA MEREKA</h2>
+                        
+                        <div class="testimonial-card glass-panel">
+                            <div class="quote-icon"><i data-lucide="quote"></i></div>
+                            <p class="quote-text">
+                                "Benice.Studio merombak total identitas visual kami dengan pendekatan brutalist minimalis mereka. Hasilnya bukan hanya memukau tim internal, tetapi juga menarik perhatian pasar baru yang jauh lebih relevan secara visual."
+                            </p>
+                            <div class="quote-author">
+                                <h4 class="author-name">ALEXANDER PUTRA</h4>
+                                <span class="author-role">Founder, CyberCore Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Brand Logo Grid (Mono logos) -->
+                    <div class="mitra-container reveal delay-1">
+                        <span class="proof-eyebrow">[ KOLABORASI BRAND ]</span>
+                        <h2 class="proof-title">MITRA KAMI</h2>
+                        
+                        <div class="mitra-grid">
+                            <div class="mitra-logo-box glass-panel">
+                                <i data-lucide="cpu" class="mitra-icon"></i>
+                                <span class="mitra-name">CYBERCORE</span>
+                            </div>
+                            <div class="mitra-logo-box glass-panel">
+                                <i data-lucide="database" class="mitra-icon"></i>
+                                <span class="mitra-name">DATAVAULT</span>
+                            </div>
+                            <div class="mitra-logo-box glass-panel">
+                                <i data-lucide="globe" class="mitra-icon"></i>
+                                <span class="mitra-name">APEXGLOBAL</span>
+                            </div>
+                            <div class="mitra-logo-box glass-panel">
+                                <i data-lucide="network" class="mitra-icon"></i>
+                                <span class="mitra-name">SYNAPSE</span>
+                            </div>
+                            <div class="mitra-logo-box glass-panel">
+                                <i data-lucide="server" class="mitra-icon"></i>
+                                <span class="mitra-name">CLOUDPULSE</span>
+                            </div>
+                            <div class="mitra-logo-box glass-panel">
+                                <i data-lucide="zap" class="mitra-icon"></i>
+                                <span class="mitra-name">ZAP-ENERGY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CALL TO ACTION AKHIR & FOOTER (CLOSING) -->
+        <section id="closing" class="closing-section">
+            <div class="container">
+                <!-- Closing Action Box -->
+                <div class="closing-box glass-panel reveal">
+                    <div class="closing-decor">[ HUBUGI_KAMI.SH ]</div>
+                    <h2 class="closing-title">PUNYA IDE SERU?<br>MARI KITA DISKUSIKAN.</h2>
+                    <p class="closing-desc">
+                        Mari wujudkan arah baru komunikasi brand Anda bersama tim desain kami. Kami siap menganalisis ide-ide segar tanpa kompromi.
+                    </p>
+                    
+                    <!-- Form / Action Contacts -->
+                    <div class="closing-actions">
+                        <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-primary btn-large">
+                            <i data-lucide="phone"></i> WHATSAPP KAMI
+                        </a>
+                        <a href="mailto:hello@benicecreactivation.com" class="btn btn-secondary btn-large">
+                            <i data-lucide="mail"></i> KIRIM EMAIL
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="main-footer">
         <div class="container footer-container">
-            <div class="footer-brand">
+            <!-- Brand Column -->
+            <div class="footer-brand reveal">
                 <a href="#" class="logo">
-                    <span class="logo-text">BENICE<span class="dot">.</span></span>
+                    <img src="Benice Logo For Site.png" alt="Benice Studio Logo" class="logo-img">
                 </a>
-                <p>
-                    Reimagining the digital infrastructure for artists and curators worldwide. Vetted, clean, and algorithm-free.
+                <p class="footer-desc">
+                    Studio desain komunikasi visual independen yang memfokuskan pengerjaan karya pada estetika radikal, fungsionalitas murni, dan kejujuran visual.
                 </p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn" class="social-icon"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="GitHub" class="social-icon"><i data-lucide="github"></i></a>
+                    <a href="#" aria-label="Twitter" class="social-icon"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Instagram" class="social-icon"><i data-lucide="instagram"></i></a>
+                </div>
             </div>
             
-            <div class="footer-links">
-                <div class="footer-col">
-                    <h5>Platform</h5>
-                    <a href="#concept">The Concept</a>
-                    <a href="#showcase">Digital Card</a>
-                    <a href="#features">The Connectory</a>
-                </div>
-                <div class="footer-col">
-                    <h5>Resources</h5>
-                    <a href="#">Help Center</a>
-                    <a href="#">Community Guidelines</a>
-                    <a href="#">Support</a>
-                </div>
+            <!-- Quick Links Navigation -->
+            <div class="footer-links-group reveal delay-1">
+                <h4 class="footer-links-title">NAVIGASI</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#hero">BERANDA</a></li>
+                    <li><a href="#manifesto">MANIFESTO</a></li>
+                    <li><a href="#showcase">PORTOFOLIO</a></li>
+                    <li><a href="#services">LAYANAN KAMI</a></li>
+                    <li><a href="#social-proof">MITRA</a></li>
+                </ul>
+            </div>
+            
+            <!-- Capabilities / Services Links -->
+            <div class="footer-links-group reveal delay-2">
+                <h4 class="footer-links-title">KAPABILITAS</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#services">VISUAL COMM. DESIGN</a></li>
+                    <li><a href="#services">REBRANDING STRATEGY</a></li>
+                    <li><a href="#services">SOCIAL MEDIA CONTENT</a></li>
+                    <li><a href="#services">LAYOUT & MERCHANDISE</a></li>
+                </ul>
+            </div>
+            
+            <!-- Direct Contact Info -->
+            <div class="footer-links-group reveal delay-3">
+                <h4 class="footer-links-title">STUDIO</h4>
+                <ul class="footer-links-list address-list">
+                    <li><i data-lucide="mail"></i> hello@benicecreactivation.com</li>
+                    <li><i data-lucide="phone"></i> +62 812-3456-7890</li>
+                    <li><i data-lucide="map-pin"></i> Sudirman SCBD Tower 18, Jakarta, Indonesia</li>
+                </ul>
             </div>
         </div>
         
+        <!-- Bottom Footer (Copyright & Legal) -->
         <div class="footer-bottom">
             <div class="container footer-bottom-container">
-                <p>&copy; 2026 Benice. Built for the arts. All rights reserved.</p>
+                <p class="copyright">&copy; 2026 BENICE.STUDIO. SELURUH HAK CIPTA DILINDUNGI.</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <span class="separator">•</span>
-                    <a href="#">Terms of Service</a>
+                    <a href="#">KEBIJAKAN PRIVASI</a>
+                    <span class="separator">/</span>
+                    <a href="#">SYARAT & KETENTUAN</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- JS script -->
+    <!-- Script File -->
     <script src="script.js"></script>
 </body>
 </html>
